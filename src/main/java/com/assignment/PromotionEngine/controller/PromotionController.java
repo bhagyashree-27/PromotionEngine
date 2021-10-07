@@ -23,10 +23,10 @@ PromotionEngineService promotionService;
 		return promotionService.calculateIndividualSKUAmount(skuCode);
 	}
 	
-	@PostMapping("/promotion}")
+	@PostMapping("/promotion")
 	public Integer calculatePromotion(@RequestBody PromotionRequest request) {
 		
-		return null;
+		return promotionService.calculatePromotion(request.getItemList());
 	}
 
 }

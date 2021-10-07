@@ -2,26 +2,10 @@ package com.assignment.PromotionEngine.model;
 
 public class SKUModel {
 	
-	private Integer skuId;
 	
 	private String skuCode;
 	
-	private Integer skuUnitPrice;
-
-	public SKUModel(Integer skuId, String skuCode, Integer skuUnitPrice) {
-		super();
-		this.skuId = skuId;
-		this.skuCode = skuCode;
-		this.skuUnitPrice = skuUnitPrice;
-	}
-
-	public Integer getSkuId() {
-		return skuId;
-	}
-
-	public void setSkuId(Integer skuId) {
-		this.skuId = skuId;
-	}
+	private Integer noOfUnits;
 
 	public String getSkuCode() {
 		return skuCode;
@@ -31,13 +15,20 @@ public class SKUModel {
 		this.skuCode = skuCode;
 	}
 
-	public Integer getSkuUnitPrice() {
-		return skuUnitPrice;
+	public Integer getNoOfUnits() {
+		return noOfUnits;
 	}
 
-	public void setSkuUnitPrice(Integer skuUnitPrice) {
-		this.skuUnitPrice = skuUnitPrice;
+	public void setNoOfUnits(Integer noOfUnits) {
+		this.noOfUnits = noOfUnits;
 	}
+
+	public SKUModel(String skuCode, Integer noOfUnits) {
+		super();
+		this.skuCode = skuCode;
+		this.noOfUnits = noOfUnits;
+	}
+
 	
 	
 

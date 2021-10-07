@@ -19,6 +19,9 @@ public class Promotion {
 	@Column(name="units")
 	Integer units;
 	
+	@Column(name="per_unit_price ")
+	Integer perUnitPrice;
+	
 	@Column(name="promotion_price")
 	Integer promotionPrice;
 
@@ -53,12 +56,24 @@ public class Promotion {
 	public void setPromotionPrice(Integer promotionPrice) {
 		this.promotionPrice = promotionPrice;
 	}
+	
 
-	public Promotion(Integer id, String skuCode, Integer units, Integer promotionPrice) {
+	public Integer getPerUnitPrice() {
+		return perUnitPrice;
+	}
+
+	public void setPerUnitPrice(Integer perUnitPrice) {
+		this.perUnitPrice = perUnitPrice;
+	}
+
+	
+
+	public Promotion(Integer id, String skuCode, Integer units, Integer perUnitPrice, Integer promotionPrice) {
 		super();
 		this.id = id;
 		this.skuCode = skuCode;
 		this.units = units;
+		this.perUnitPrice = perUnitPrice;
 		this.promotionPrice = promotionPrice;
 	}
 

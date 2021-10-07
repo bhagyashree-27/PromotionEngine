@@ -1,5 +1,22 @@
 package com.assignment.PromotionEngine.model;
 
-public class PromotionRequest {
+import java.util.List;
 
+
+public class PromotionRequest {
+	
+
+	List<SKUModel> itemList;
+
+	public List<SKUModel> getItemList() {
+		return itemList;
+	}
+
+	public void setItemList(List<SKUModel> itemList) {
+		this.itemList = itemList;
+	}
+	
+	
+
+	
 }

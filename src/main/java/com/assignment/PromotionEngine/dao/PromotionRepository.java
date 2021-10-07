@@ -10,4 +10,8 @@ public interface PromotionRepository extends JpaRepository<Promotion, Integer> {
 
 	Optional<Promotion> findBySkuCode(String skuCode);
 
+	Optional<Promotion> findBySkuCodeAndUnits(String skuCode, Integer noOfUnits);
+
+	Optional<Promotion> findPerUnitPriceBySkuCode(String skuCode);
+
 }

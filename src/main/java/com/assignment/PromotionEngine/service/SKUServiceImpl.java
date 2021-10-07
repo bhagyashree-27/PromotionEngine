@@ -23,7 +23,7 @@ public class SKUServiceImpl implements SKUService{
 	}
 	
 	public List<SKUModel> prepareData(){
-		SKUModel model  = new SKUModel(1,"A",50);
+		SKUModel model  = new SKUModel("A",50);
 		List<SKUModel> list = new ArrayList<>();
 		list.add(model);
 		return list;
