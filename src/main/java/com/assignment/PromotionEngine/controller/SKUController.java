@@ -18,6 +18,7 @@ public class SKUController {
 @Autowired
 SKUService service;
 
+
 	
 	@GetMapping("/skus")
 	public List<SKUModel> getSkuDetails() {
@@ -28,6 +29,7 @@ SKUService service;
 	public SKUModel addSkuDetails() {
 		return null;
 	}
+	
 
 }
 	
