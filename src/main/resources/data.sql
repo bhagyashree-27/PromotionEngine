@@ -8,10 +8,13 @@ CREATE TABLE promotion(
   promotion_price INT NOT NULL
 );
 
-INSERT INTO promotion(id,sku_code, units, promotion_price) VALUES
+INSERT INTO promotion(id,sku_code, units,per_unit_price , promotion_price) VALUES
   (1,'A', 3,50, 130);
 
 
 
-INSERT INTO promotion(id,sku_code, units, promotion_price) VALUES
-  (2,'B', 2, 50, 45);
+INSERT INTO promotion(id,sku_code, units,per_unit_price , promotion_price) VALUES
+  (2,'B', 2, 30, 45);
+
+INSERT INTO promotion(id,sku_code, units,per_unit_price , promotion_price) VALUES
+  (3,'C', 2, 30, 45);
